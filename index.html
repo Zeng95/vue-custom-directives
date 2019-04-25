@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Custom Vue Directives</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+  <div id="app">
+    <h1 v-purple>Vue School</h1>
+    <p v-if="age < 10">{{ content }}</p>
+    <a v-bind:href="homepageURL" v-bind:title="linkTitle">This is a link</a>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
