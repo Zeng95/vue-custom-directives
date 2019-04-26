@@ -6,12 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Custom Vue Directives</title>
+  <link rel="stylesheet" href="./style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
   <div id="app">
-    <h1 v-switching-color:fast.underline.textcenter="colors">Have a nice day</h1>
+    <!-- <h1 v-switching-color:fast.underline.textcenter="colors" v-if="show">Have A Nice Day</h1> -->
+
+    <!-- <button v-on:click="show = !show">Toggle</button> -->
+
+    <div class="flyout" id="flyout-example" v-click-outside="clickedOutside">
+      <h5 class="flyout-title">This could be a flyout&hellip;</h5>
+
+      <div class="flyout-debug" id="flyout-debug"></div>
+
+      <div class="flyout-actions">
+        <button class="button button-outline" type="button">Cancel</button>
+        <button class="button" type="button">Ok</button>
+      </div>
+    </div>
   </div>
 
   <script src="./app.js"></script>
