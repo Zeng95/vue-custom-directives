@@ -30,7 +30,7 @@ Vue.directive('switching-color', {
       console.log('coloring')
       el.style.color = colors[i]
 
-      i = (i < colors.length - 1) ? i + 1 : 0;
+      i = (i < colors.length - 1) ? ++i : 0;
     }, speed)
   },
 
@@ -46,7 +46,9 @@ new Vue({
   data() {
     return {
       colors: ['red', 'orange', 'blue', 'green'],
-      show: true
+      show: true,
+      age: 5,
+      homepageURL: 'https://www.wikihow.com/Dress-Like-a-Skater#Choosing_Between_Style_and_Functionality_sub'
     }
   },
 
