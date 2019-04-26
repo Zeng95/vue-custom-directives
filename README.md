@@ -4,7 +4,13 @@
 
 ## Notes
 1. Directives accept only one argument.
+<<<<<<< HEAD
 2. Directives accept multiple modifiers, specified by the dot.
 3. The benefit of modifiers is that we can use multiple at the same time.
 4. A common convention is to use double underscores before and after the property name.
 5. Common directives are v-if, v-for and v-model.
+=======
+2. The benefit of modifiers is that we can use multiple at the same time.
+3. A common convention is to use double underscores before and after the property name.
+4. Common directives are <strong>v-if</strong>, <strong>v-for</strong> and <strong>v-model</strong>.
+>>>>>>> c838434fb449a20bfaf5585eb90d3bcec86d7eb3
